@@ -13,8 +13,8 @@ class Vector:
     def __sub__(self, other: "Vector") -> "Vector":
         return Vector(self.x - other.x, self.y - other.y)
 
-    def __mul__(self, other: Union["Vector", float, int]) -> Union[
-        "Vector", float]:
+    def __mul__(self, other: Union["Vector", float, int]) \
+            -> Union["Vector", float]:
         if isinstance(other, (int, float)):
             return Vector(self.x * other, self.y * other)
         elif isinstance(other, Vector):
