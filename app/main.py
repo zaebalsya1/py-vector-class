@@ -22,7 +22,7 @@ class Vector:
         else:
             raise TypeError(
                 "Unsupported operand type for *: "
-                f"\"Vector\" and \"{type(other)}\""
+                f'"Vector" and "{type(other)}"'
             )
 
     @classmethod
